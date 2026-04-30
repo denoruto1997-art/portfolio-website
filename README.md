@@ -91,7 +91,7 @@ To customize the website:
 2. **Content**: Update text content in `index.html`
 
 3. **Images**: Add profile or farm images to the `images/` folder
-
+   - Add your portrait as `images/profile.jpg` for the home page.
 4. **Skills**: Modify the skills section in `index.html` to add/remove competencies
 
 ## License
