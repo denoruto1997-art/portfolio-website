@@ -199,7 +199,7 @@
 /* Page Hero */
 .page-hero {
     position: relative;
-    min-height: 60vh;
+    min-height: 50vh;
     display: flex;
     align-items: center;
     background: linear-gradient(135deg, rgba(44, 94, 26, 0.03) 0%, rgba(139, 195, 74, 0.08) 50%, rgba(44, 94, 26, 0.02) 100%);
@@ -219,7 +219,7 @@
 }
 
 .page-hero .hero-content {
-    padding: 60px 0;
+    padding: 40px 0;
     max-width: 700px;
 }
 
@@ -234,14 +234,14 @@
 }
 
 .page-hero h1 {
-    font-size: clamp(40px, 6vw, 64px);
+    font-size: clamp(36px, 8vw, 56px);
     color: var(--primary-dark);
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     line-height: 1.1;
 }
 
 .page-hero .hero-description {
-    font-size: 18px;
+    font-size: 17px;
     color: var(--text-light);
     line-height: 1.7;
 }
@@ -255,34 +255,71 @@
 
     .gallery-filter {
         gap: 12px;
+        padding: 0 8px;
     }
 
     .filter-btn {
-        padding: 10px 20px;
+        padding: 12px 20px;
         font-size: 14px;
+        min-height: 44px;
     }
 
     .certificates-section {
-        padding: 60px 0;
+        padding: 40px 0;
     }
 
     .page-hero {
-        min-height: 40vh;
+        min-height: 45vh;
+        padding: 80px 0 40px;
+    }
+
+    .page-hero .hero-content {
+        padding: 30px 0;
+    }
+
+    .certificate-card {
+        border-radius: 0;
+        margin: 0 -16px;
+    }
+
+    .lightbox-content {
+        padding: 20px;
     }
 }
 
 @media (max-width: 480px) {
-    .certificate-card {
-        margin: 0 -16px;
-        border-radius: 0;
+    .filter-btn {
+        padding: 10px 16px;
+        font-size: 13px;
+        min-height: 44px;
     }
 
     .gallery-filter {
         gap: 8px;
     }
 
-    .filter-btn {
-        padding: 8px 16px;
-        font-size: 13px;
+    .certificate-image {
+        aspect-ratio: 3/4;
+    }
+
+    .certificate-info {
+        padding: 20px;
+    }
+
+    .certificate-info h3 {
+        font-size: 18px;
+    }
+
+    .lightbox-close {
+        position: fixed;
+        top: 16px;
+        right: 16px;
+        font-size: 32px;
+        z-index: 10000;
+    }
+
+    #lightbox-image {
+        max-height: 70vh;
+        border-radius: 4px;
     }
 }
